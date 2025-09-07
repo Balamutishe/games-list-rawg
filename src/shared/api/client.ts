@@ -6,6 +6,6 @@ export const client = createClient<paths>(
   {
     baseUrl: `${ baseUrl }`,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
   } )

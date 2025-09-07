@@ -1,21 +1,30 @@
 import { useQuery } from "@tanstack/react-query";
 import { client } from "@shared/api/client.ts";
 import { apiKey } from "@shared/api/apiConfig.ts";
+import type { ResponseGameList } from "@shared/types/games.ts";
 
 export const useGamesGet = () => {
   return useQuery( {
     queryKey: [ "games" ],
-    queryFn: async () => await client.GET( `/games`,
-      {
-        params: {
-          query: {
-            page: "1",
-            page_size: "10",
-            // @ts-ignore
-            key: `${ apiKey }`
-          }
-        },
-        signal: AbortSignal.timeout( 10000 )
-      } )
+    queryFn: async ( { signal } ): Promise<ResponseGameList> => {
+      const response = await client.GET( `/games`,
+        {
+          params: {
+            query: {
+              page: "2",
+              page_size: "30",
+              // @ts-ignore
+              key: `${ apiKey }`
+            }
+          },
+          signal
+        } )
+
+      if ( !response.response.ok ) {
+        console.error( "Error fetching games" )
+      }
+
+      return response.data!
+    }
   } )
 }

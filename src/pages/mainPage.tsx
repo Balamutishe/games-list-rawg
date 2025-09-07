@@ -1,18 +1,9 @@
-import { useGamesGet } from "@shared/api/games/useGamesGet.ts";
+import { GamesList } from "@features/games/gamesList.tsx";
 
 function MainPage() {
-  const gamesData = useGamesGet()
-
-  if ( gamesData.isLoading ) {
-    return <div>Loading...</div>
-  }
-
-  if ( gamesData.isError ) {
-    return <div>Error: { gamesData.error.message }</div>
-  }
 
   return <section>
-    <h1>Success data</h1>
+    <GamesList />
   </section>
 }
 
