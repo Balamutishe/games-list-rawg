@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "api:gen": "openapi-typescript ./src/shared/api/instanceShema.json -o ./src/shared/api/schema.ts --root-types"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -15,6 +16,7 @@
     "@tanstack/react-router": "^1.131.35",
     "axios": "^1.11.0",
     "clsx": "^2.1.1",
+    "openapi-fetch": "^0.14.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "zod": "^4.1.5"
@@ -33,6 +35,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "openapi-typescript": "^7.9.1",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.13",
