@@ -1,6 +1,7 @@
 import { useGamesGet } from "@shared/api/games/useGamesGet.ts";
 import type { Game } from "@shared/types/games.ts";
 import List from "@widgets/list.tsx";
+import { filterPlatformName } from "@shared/utils/filterPlatformName.ts";
 
 export const GamesList = () => {
   const { data, isError, isLoading, error } = useGamesGet()
@@ -33,7 +34,12 @@ const GameCard = ( { game }: { game: Game } ) => {
       alt={ game.name_original }
       className="rounded-t-xl w-full h-[60%]"
     />
-    <p className="h-[40%] flex items-center p-2">
+    <p className="h-[20%] flex items-center text-xs p-2">
+      { filterPlatformName( game.platforms! ).map( ( platform ) => (
+        <span>{ platform }</span> )
+      ) }
+    </p>
+    <p className="h-[20%] flex items-center p-2">
       { game.name }
     </p>
   </div>
