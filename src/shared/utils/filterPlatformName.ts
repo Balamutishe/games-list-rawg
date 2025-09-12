@@ -32,7 +32,7 @@ export const filterPlatformName = ( platforms: {
   const platformsNames = Array.from( new Map(
     filterArr.map(
       ( platformName ) => [ platformName, true ] ) ).keys() )
-    .filter( ( name ) => name !== undefined )
+    .filter( ( name ) => name !== undefined ).sort()
 
   return platformsNames;
 }
