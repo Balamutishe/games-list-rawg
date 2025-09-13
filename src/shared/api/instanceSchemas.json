@@ -66,7 +66,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Position"
+                    "$ref": "#/components/schemas/Position"
                   }
                 }
               }
@@ -126,7 +126,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Person"
+                    "$ref": "#/components/schemas/Person"
                   }
                 }
               }
@@ -156,7 +156,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/PersonSingle"
+              "$ref": "#/components/schemas/PersonSingle"
             }
           }
         },
@@ -221,7 +221,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Developer"
+                    "$ref": "#/components/schemas/Developer"
                   }
                 }
               }
@@ -244,7 +244,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/DeveloperSingle"
+              "$ref": "#/components/schemas/DeveloperSingle"
             }
           }
         },
@@ -435,7 +435,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Game"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               }
@@ -495,7 +495,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Game"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               }
@@ -569,7 +569,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/GamePersonList"
+                    "$ref": "#/components/schemas/GamePersonList"
                   }
                 }
               }
@@ -636,7 +636,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Game"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               }
@@ -703,7 +703,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Game"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               }
@@ -777,7 +777,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/ScreenShot"
+                    "$ref": "#/components/schemas/ScreenShot"
                   }
                 }
               }
@@ -851,7 +851,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/GameStoreFull"
+                    "$ref": "#/components/schemas/GameStoreFull"
                   }
                 }
               }
@@ -889,7 +889,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/GameSingle"
+              "$ref": "#/components/schemas/GameSingle"
             }
           }
         },
@@ -925,7 +925,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/ParentAchievement"
+              "$ref": "#/components/schemas/ParentAchievement"
             }
           }
         },
@@ -961,7 +961,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Movie"
+              "$ref": "#/components/schemas/Movie"
             }
           }
         },
@@ -997,7 +997,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Reddit"
+              "$ref": "#/components/schemas/Reddit"
             }
           }
         },
@@ -1033,7 +1033,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/GameSingle"
+              "$ref": "#/components/schemas/GameSingle"
             }
           }
         },
@@ -1069,7 +1069,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Twitch"
+              "$ref": "#/components/schemas/Twitch"
             }
           }
         },
@@ -1105,7 +1105,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Youtube"
+              "$ref": "#/components/schemas/Youtube"
             }
           }
         },
@@ -1177,7 +1177,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Genre"
+                    "$ref": "#/components/schemas/Genre"
                   }
                 }
               }
@@ -1200,7 +1200,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/GenreSingle"
+              "$ref": "#/components/schemas/GenreSingle"
             }
           }
         },
@@ -1272,7 +1272,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Platform"
+                    "$ref": "#/components/schemas/Platform"
                   }
                 }
               }
@@ -1339,7 +1339,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/PlatformParentSingle"
+                    "$ref": "#/components/schemas/PlatformParentSingle"
                   }
                 }
               }
@@ -1362,7 +1362,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/PlatformSingle"
+              "$ref": "#/components/schemas/PlatformSingle"
             }
           }
         },
@@ -1427,7 +1427,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Publisher"
+                    "$ref": "#/components/schemas/Publisher"
                   }
                 }
               }
@@ -1450,7 +1450,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/PublisherSingle"
+              "$ref": "#/components/schemas/PublisherSingle"
             }
           }
         },
@@ -1522,7 +1522,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Store"
+                    "$ref": "#/components/schemas/Store"
                   }
                 }
               }
@@ -1545,7 +1545,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/StoreSingle"
+              "$ref": "#/components/schemas/StoreSingle"
             }
           }
         },
@@ -1610,7 +1610,7 @@
                 "results": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/Tag"
+                    "$ref": "#/components/schemas/Tag"
                   }
                 }
               }
@@ -1633,7 +1633,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/TagSingle"
+              "$ref": "#/components/schemas/TagSingle"
             }
           }
         },
@@ -1652,1575 +1652,1577 @@
       ]
     }
   },
-  "definitions": {
-    "Position": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        }
-      }
-    },
-    "Person": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        }
-      }
-    },
-    "PersonSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string",
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "reviews_count": {
-          "title": "Reviews count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "rating": {
-          "title": "Rating",
-          "type": "string",
-          "format": "decimal",
-          "readOnly": true
-        },
-        "rating_top": {
-          "title": "Rating top",
-          "type": "integer",
-          "readOnly": true
-        },
-        "updated": {
-          "title": "Updated",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        }
-      }
-    },
-    "Developer": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        }
-      }
-    },
-    "DeveloperSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
-        }
-      }
-    },
-    "Game": {
-      "required": [
-        "rating"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "released": {
-          "title": "Released",
-          "type": "string",
-          "format": "date",
-          "readOnly": true
-        },
-        "tba": {
-          "title": "TBA",
-          "type": "boolean",
-          "readOnly": true
-        },
-        "background_image": {
-          "title": "Background image",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "rating": {
-          "title": "Rating",
-          "type": "number"
-        },
-        "rating_top": {
-          "title": "Rating top",
-          "type": "integer",
-          "readOnly": true
-        },
-        "ratings": {
-          "title": "Ratings",
-          "type": "object",
-          "readOnly": true
-        },
-        "ratings_count": {
-          "title": "Ratings count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "reviews_text_count": {
-          "title": "Reviews text count",
-          "type": "string",
-          "readOnly": true
-        },
-        "added": {
-          "title": "Added",
-          "type": "integer",
-          "readOnly": true
-        },
-        "added_by_status": {
-          "title": "Added by status",
-          "type": "object",
-          "readOnly": true
-        },
-        "metacritic": {
-          "title": "Metacritic",
-          "type": "integer",
-          "readOnly": true
-        },
-        "playtime": {
-          "title": "Playtime",
-          "description": "in hours",
-          "type": "integer",
-          "readOnly": true
-        },
-        "suggestions_count": {
-          "title": "Suggestions count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "updated": {
-          "title": "Updated",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        },
-        "esrb_rating": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "slug": {
-              "type": "string",
-              "enum": [
-                "everyone",
-                "everyone-10-plus",
-                "teen",
-                "mature",
-                "adults-only",
-                "rating-pending"
-              ]
-            },
-            "name": {
-              "type": "string",
-              "enum": [
-                "Everyone",
-                "Everyone 10+",
-                "Teen",
-                "Mature",
-                "Adults Only",
-                "Rating Pending"
-              ]
-            }
+  "components": {
+    "schemas": {
+      "Position": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
           },
-          "x-nullable": true
-        },
-        "platforms": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "platform": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "integer"
-                  },
-                  "slug": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  }
-                }
-              },
-              "released_at": {
-                "type": "string",
-                "x-nullable": true
-              },
-              "requirements": {
-                "type": "object",
-                "properties": {
-                  "minimum": {
-                    "type": "string"
-                  },
-                  "recommended": {
-                    "type": "string"
-                  }
-                },
-                "x-nullable": true
-              }
-            }
-          }
-        }
-      }
-    },
-    "GamePersonList": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        }
-      }
-    },
-    "ScreenShot": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image": {
-          "title": "Image",
-          "description": "An image file with size up to 20 MB.",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "hidden": {
-          "title": "Hidden",
-          "description": "Set image as hidden or visible.",
-          "type": "boolean",
-          "default": false
-        },
-        "width": {
-          "title": "Width",
-          "type": "integer",
-          "readOnly": true
-        },
-        "height": {
-          "title": "Height",
-          "type": "integer",
-          "readOnly": true
-        }
-      },
-      "example": {
-        "image": "@image.jpg",
-        "hidden": false
-      }
-    },
-    "GameStoreFull": {
-      "required": [
-        "url"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "game_id": {
-          "title": "Game id",
-          "type": "string",
-          "readOnly": true
-        },
-        "store_id": {
-          "title": "Store id",
-          "type": "string",
-          "readOnly": true
-        },
-        "url": {
-          "title": "Url",
-          "type": "string",
-          "format": "uri",
-          "maxLength": 500,
-          "minLength": 1
-        }
-      }
-    },
-    "GamePlatformMetacritic": {
-      "type": "object",
-      "properties": {
-        "metascore": {
-          "title": "Metascore",
-          "type": "integer",
-          "readOnly": true
-        },
-        "url": {
-          "title": "Url",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        }
-      }
-    },
-    "GameSingle": {
-      "required": [
-        "rating"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "name_original": {
-          "title": "Name original",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "metacritic": {
-          "title": "Metacritic",
-          "type": "integer",
-          "readOnly": true
-        },
-        "metacritic_platforms": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/GamePlatformMetacritic"
-          },
-          "readOnly": true
-        },
-        "released": {
-          "title": "Released",
-          "type": "string",
-          "format": "date",
-          "readOnly": true
-        },
-        "tba": {
-          "title": "TBA",
-          "type": "boolean",
-          "readOnly": true
-        },
-        "updated": {
-          "title": "Updated",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        },
-        "background_image": {
-          "title": "Background image",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "background_image_additional": {
-          "title": "Background image additional",
-          "type": "string",
-          "readOnly": true
-        },
-        "website": {
-          "title": "Website",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "rating": {
-          "title": "Rating",
-          "type": "number"
-        },
-        "rating_top": {
-          "title": "Rating top",
-          "type": "integer",
-          "readOnly": true
-        },
-        "ratings": {
-          "title": "Ratings",
-          "type": "object",
-          "readOnly": true
-        },
-        "reactions": {
-          "title": "Reactions",
-          "type": "object",
-          "readOnly": true
-        },
-        "added": {
-          "title": "Added",
-          "type": "integer",
-          "readOnly": true
-        },
-        "added_by_status": {
-          "title": "Added by status",
-          "type": "object",
-          "readOnly": true
-        },
-        "playtime": {
-          "title": "Playtime",
-          "description": "in hours",
-          "type": "integer",
-          "readOnly": true
-        },
-        "screenshots_count": {
-          "title": "Screenshots count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "movies_count": {
-          "title": "Movies count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "creators_count": {
-          "title": "Creators count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "achievements_count": {
-          "title": "Achievements count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "parent_achievements_count": {
-          "title": "Parent achievements count",
-          "type": "string",
-          "readOnly": true
-        },
-        "reddit_url": {
-          "title": "Reddit url",
-          "description": "For example \"https://www.reddit.com/r/uncharted/\" or \"uncharted\"",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "reddit_name": {
-          "title": "Reddit name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "reddit_description": {
-          "title": "Reddit description",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "reddit_logo": {
-          "title": "Reddit logo",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "reddit_count": {
-          "title": "Reddit count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "twitch_count": {
-          "title": "Twitch count",
-          "type": "string",
-          "readOnly": true
-        },
-        "youtube_count": {
-          "title": "Youtube count",
-          "type": "string",
-          "readOnly": true
-        },
-        "reviews_text_count": {
-          "title": "Reviews text count",
-          "type": "string",
-          "readOnly": true
-        },
-        "ratings_count": {
-          "title": "Ratings count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "suggestions_count": {
-          "title": "Suggestions count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "alternative_names": {
-          "type": "array",
-          "items": {
-            "title": "Alternative names",
+          "name": {
+            "title": "Name",
             "type": "string",
-            "maxLength": 200,
+            "readOnly": true,
             "minLength": 1
           },
-          "readOnly": true
-        },
-        "metacritic_url": {
-          "title": "Metacritic url",
-          "description": "For example \"http://www.metacritic.com/game/playstation-4/the-witcher-3-wild-hunt\"",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "parents_count": {
-          "title": "Parents count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "additions_count": {
-          "title": "Additions count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "game_series_count": {
-          "title": "Game series count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "esrb_rating": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "slug": {
-              "type": "string",
-              "enum": [
-                "everyone",
-                "everyone-10-plus",
-                "teen",
-                "mature",
-                "adults-only",
-                "rating-pending"
-              ]
-            },
-            "name": {
-              "type": "string",
-              "enum": [
-                "Everyone",
-                "Everyone 10+",
-                "Teen",
-                "Mature",
-                "Adults Only",
-                "Rating Pending"
-              ]
-            }
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "Person": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
           },
-          "x-nullable": true
-        },
-        "platforms": {
-          "type": "array",
-          "items": {
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          }
+        }
+      },
+      "PersonSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string",
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "reviews_count": {
+            "title": "Reviews count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "rating": {
+            "title": "Rating",
+            "type": "string",
+            "format": "decimal",
+            "readOnly": true
+          },
+          "rating_top": {
+            "title": "Rating top",
+            "type": "integer",
+            "readOnly": true
+          },
+          "updated": {
+            "title": "Updated",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          }
+        }
+      },
+      "Developer": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "DeveloperSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          }
+        }
+      },
+      "Game": {
+        "required": [
+          "rating"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "released": {
+            "title": "Released",
+            "type": "string",
+            "format": "date",
+            "readOnly": true
+          },
+          "tba": {
+            "title": "TBA",
+            "type": "boolean",
+            "readOnly": true
+          },
+          "background_image": {
+            "title": "Background image",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "rating": {
+            "title": "Rating",
+            "type": "number"
+          },
+          "rating_top": {
+            "title": "Rating top",
+            "type": "integer",
+            "readOnly": true
+          },
+          "ratings": {
+            "title": "Ratings",
+            "type": "object",
+            "readOnly": true
+          },
+          "ratings_count": {
+            "title": "Ratings count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "reviews_text_count": {
+            "title": "Reviews text count",
+            "type": "string",
+            "readOnly": true
+          },
+          "added": {
+            "title": "Added",
+            "type": "integer",
+            "readOnly": true
+          },
+          "added_by_status": {
+            "title": "Added by status",
+            "type": "object",
+            "readOnly": true
+          },
+          "metacritic": {
+            "title": "Metacritic",
+            "type": "integer",
+            "readOnly": true
+          },
+          "playtime": {
+            "title": "Playtime",
+            "description": "in hours",
+            "type": "integer",
+            "readOnly": true
+          },
+          "suggestions_count": {
+            "title": "Suggestions count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "updated": {
+            "title": "Updated",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "esrb_rating": {
             "type": "object",
             "properties": {
-              "platform": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "integer"
-                  },
-                  "slug": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  }
-                }
+              "id": {
+                "type": "integer"
               },
-              "released_at": {
+              "slug": {
                 "type": "string",
-                "x-nullable": true
+                "enum": [
+                  "everyone",
+                  "everyone-10-plus",
+                  "teen",
+                  "mature",
+                  "adults-only",
+                  "rating-pending"
+                ]
               },
-              "requirements": {
-                "type": "object",
-                "properties": {
-                  "minimum": {
-                    "type": "string"
-                  },
-                  "recommended": {
-                    "type": "string"
+              "name": {
+                "type": "string",
+                "enum": [
+                  "Everyone",
+                  "Everyone 10+",
+                  "Teen",
+                  "Mature",
+                  "Adults Only",
+                  "Rating Pending"
+                ]
+              }
+            },
+            "x-nullable": true
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "platform": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
                   }
                 },
-                "x-nullable": true
+                "released_at": {
+                  "type": "string",
+                  "x-nullable": true
+                },
+                "requirements": {
+                  "type": "object",
+                  "properties": {
+                    "minimum": {
+                      "type": "string"
+                    },
+                    "recommended": {
+                      "type": "string"
+                    }
+                  },
+                  "x-nullable": true
+                }
               }
             }
           }
         }
-      }
-    },
-    "ParentAchievement": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "percent": {
-          "title": "Percent",
-          "type": "string",
-          "format": "decimal",
-          "readOnly": true
-        }
-      }
-    },
-    "Movie": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "preview": {
-          "title": "Preview",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "data": {
-          "title": "Data",
-          "type": "object",
-          "readOnly": true
-        }
-      }
-    },
-    "Reddit": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "text": {
-          "title": "Text",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "url": {
-          "title": "Url",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "username": {
-          "title": "Username",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "username_url": {
-          "title": "Username url",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "created": {
-          "title": "Created",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        }
-      }
-    },
-    "Twitch": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "external_id": {
-          "title": "External id",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "created": {
-          "title": "Created",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        },
-        "published": {
-          "title": "Published",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        },
-        "thumbnail": {
-          "title": "Thumbnail",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "view_count": {
-          "title": "View count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "language": {
-          "title": "Language",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        }
-      }
-    },
-    "Youtube": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "external_id": {
-          "title": "External id",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "channel_id": {
-          "title": "Channel id",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "channel_title": {
-          "title": "Channel title",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "created": {
-          "title": "Created",
-          "type": "string",
-          "format": "date-time",
-          "readOnly": true
-        },
-        "view_count": {
-          "title": "View count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "comments_count": {
-          "title": "Comments count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "like_count": {
-          "title": "Like count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "dislike_count": {
-          "title": "Dislike count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "favorite_count": {
-          "title": "Favorite count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "thumbnails": {
-          "title": "Thumbnails",
-          "type": "object",
-          "readOnly": true
-        }
-      }
-    },
-    "Genre": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        }
-      }
-    },
-    "GenreSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
-        }
-      }
-    },
-    "Platform": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "readOnly": true,
-          "x-nullable": true,
-          "format": "uri"
-        },
-        "year_start": {
-          "title": "Year start",
-          "type": "integer",
-          "maximum": 32767,
-          "minimum": 0,
-          "x-nullable": true
-        },
-        "year_end": {
-          "title": "Year end",
-          "type": "integer",
-          "maximum": 32767,
-          "minimum": 0,
-          "x-nullable": true
-        }
-      }
-    },
-    "PlatformParentSingle": {
-      "required": [
-        "name",
-        "platforms"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "platforms": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Platform"
+      },
+      "GamePersonList": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
           }
         }
-      }
-    },
-    "PlatformSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
+      },
+      "ScreenShot": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image": {
+            "title": "Image",
+            "description": "An image file with size up to 20 MB.",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "hidden": {
+            "title": "Hidden",
+            "description": "Set image as hidden or visible.",
+            "type": "boolean",
+            "default": false
+          },
+          "width": {
+            "title": "Width",
+            "type": "integer",
+            "readOnly": true
+          },
+          "height": {
+            "title": "Height",
+            "type": "integer",
+            "readOnly": true
+          }
         },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "readOnly": true,
-          "format": "uri"
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
-        },
-        "image": {
-          "title": "Image",
-          "type": "string",
-          "readOnly": true,
-          "x-nullable": true,
-          "format": "uri"
-        },
-        "year_start": {
-          "title": "Year start",
-          "type": "integer",
-          "maximum": 32767,
-          "minimum": 0,
-          "x-nullable": true
-        },
-        "year_end": {
-          "title": "Year end",
-          "type": "integer",
-          "maximum": 32767,
-          "minimum": 0,
-          "x-nullable": true
+        "example": {
+          "image": "@image.jpg",
+          "hidden": false
         }
-      }
-    },
-    "Publisher": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
+      },
+      "GameStoreFull": {
+        "required": [
+          "url"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "game_id": {
+            "title": "Game id",
+            "type": "string",
+            "readOnly": true
+          },
+          "store_id": {
+            "title": "Store id",
+            "type": "string",
+            "readOnly": true
+          },
+          "url": {
+            "title": "Url",
+            "type": "string",
+            "format": "uri",
+            "maxLength": 500,
+            "minLength": 1
+          }
         }
-      }
-    },
-    "PublisherSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
+      },
+      "GamePlatformMetacritic": {
+        "type": "object",
+        "properties": {
+          "metascore": {
+            "title": "Metascore",
+            "type": "integer",
+            "readOnly": true
+          },
+          "url": {
+            "title": "Url",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          }
         }
-      }
-    },
-    "Store": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "domain": {
-          "title": "Domain",
-          "type": "string",
-          "maxLength": 255,
-          "x-nullable": true
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
+      },
+      "GameSingle": {
+        "required": [
+          "rating"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "name_original": {
+            "title": "Name original",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "metacritic": {
+            "title": "Metacritic",
+            "type": "integer",
+            "readOnly": true
+          },
+          "metacritic_platforms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GamePlatformMetacritic"
+            },
+            "readOnly": true
+          },
+          "released": {
+            "title": "Released",
+            "type": "string",
+            "format": "date",
+            "readOnly": true
+          },
+          "tba": {
+            "title": "TBA",
+            "type": "boolean",
+            "readOnly": true
+          },
+          "updated": {
+            "title": "Updated",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "background_image": {
+            "title": "Background image",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "background_image_additional": {
+            "title": "Background image additional",
+            "type": "string",
+            "readOnly": true
+          },
+          "website": {
+            "title": "Website",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "rating": {
+            "title": "Rating",
+            "type": "number"
+          },
+          "rating_top": {
+            "title": "Rating top",
+            "type": "integer",
+            "readOnly": true
+          },
+          "ratings": {
+            "title": "Ratings",
+            "type": "object",
+            "readOnly": true
+          },
+          "reactions": {
+            "title": "Reactions",
+            "type": "object",
+            "readOnly": true
+          },
+          "added": {
+            "title": "Added",
+            "type": "integer",
+            "readOnly": true
+          },
+          "added_by_status": {
+            "title": "Added by status",
+            "type": "object",
+            "readOnly": true
+          },
+          "playtime": {
+            "title": "Playtime",
+            "description": "in hours",
+            "type": "integer",
+            "readOnly": true
+          },
+          "screenshots_count": {
+            "title": "Screenshots count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "movies_count": {
+            "title": "Movies count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "creators_count": {
+            "title": "Creators count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "achievements_count": {
+            "title": "Achievements count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "parent_achievements_count": {
+            "title": "Parent achievements count",
+            "type": "string",
+            "readOnly": true
+          },
+          "reddit_url": {
+            "title": "Reddit url",
+            "description": "For example \"https://www.reddit.com/r/uncharted/\" or \"uncharted\"",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "reddit_name": {
+            "title": "Reddit name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "reddit_description": {
+            "title": "Reddit description",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "reddit_logo": {
+            "title": "Reddit logo",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "reddit_count": {
+            "title": "Reddit count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "twitch_count": {
+            "title": "Twitch count",
+            "type": "string",
+            "readOnly": true
+          },
+          "youtube_count": {
+            "title": "Youtube count",
+            "type": "string",
+            "readOnly": true
+          },
+          "reviews_text_count": {
+            "title": "Reviews text count",
+            "type": "string",
+            "readOnly": true
+          },
+          "ratings_count": {
+            "title": "Ratings count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "suggestions_count": {
+            "title": "Suggestions count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "alternative_names": {
+            "type": "array",
+            "items": {
+              "title": "Alternative names",
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "readOnly": true
+          },
+          "metacritic_url": {
+            "title": "Metacritic url",
+            "description": "For example \"http://www.metacritic.com/game/playstation-4/the-witcher-3-wild-hunt\"",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "parents_count": {
+            "title": "Parents count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "additions_count": {
+            "title": "Additions count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "game_series_count": {
+            "title": "Game series count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "esrb_rating": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "slug": {
+                "type": "string",
+                "enum": [
+                  "everyone",
+                  "everyone-10-plus",
+                  "teen",
+                  "mature",
+                  "adults-only",
+                  "rating-pending"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "enum": [
+                  "Everyone",
+                  "Everyone 10+",
+                  "Teen",
+                  "Mature",
+                  "Adults Only",
+                  "Rating Pending"
+                ]
+              }
+            },
+            "x-nullable": true
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "platform": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "released_at": {
+                  "type": "string",
+                  "x-nullable": true
+                },
+                "requirements": {
+                  "type": "object",
+                  "properties": {
+                    "minimum": {
+                      "type": "string"
+                    },
+                    "recommended": {
+                      "type": "string"
+                    }
+                  },
+                  "x-nullable": true
+                }
+              }
+            }
+          }
         }
-      }
-    },
-    "StoreSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "domain": {
-          "title": "Domain",
-          "type": "string",
-          "maxLength": 255,
-          "x-nullable": true
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
+      },
+      "ParentAchievement": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "percent": {
+            "title": "Percent",
+            "type": "string",
+            "format": "decimal",
+            "readOnly": true
+          }
         }
-      }
-    },
-    "Tag": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "language": {
-          "title": "Language",
-          "type": "string",
-          "readOnly": true,
-          "minLength": 1
+      },
+      "Movie": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "preview": {
+            "title": "Preview",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "data": {
+            "title": "Data",
+            "type": "object",
+            "readOnly": true
+          }
         }
-      }
-    },
-    "TagSingle": {
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "slug": {
-          "title": "Slug",
-          "type": "string",
-          "format": "slug",
-          "pattern": "^[-a-zA-Z0-9_]+$",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "games_count": {
-          "title": "Games count",
-          "type": "integer",
-          "readOnly": true
-        },
-        "image_background": {
-          "title": "Image background",
-          "type": "string",
-          "format": "uri",
-          "readOnly": true,
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
+      },
+      "Reddit": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "text": {
+            "title": "Text",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "url": {
+            "title": "Url",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "username": {
+            "title": "Username",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "username_url": {
+            "title": "Username url",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "created": {
+            "title": "Created",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          }
+        }
+      },
+      "Twitch": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "external_id": {
+            "title": "External id",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "created": {
+            "title": "Created",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "published": {
+            "title": "Published",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "thumbnail": {
+            "title": "Thumbnail",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "view_count": {
+            "title": "View count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "language": {
+            "title": "Language",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "Youtube": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "external_id": {
+            "title": "External id",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "channel_id": {
+            "title": "Channel id",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "channel_title": {
+            "title": "Channel title",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "created": {
+            "title": "Created",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "view_count": {
+            "title": "View count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "comments_count": {
+            "title": "Comments count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "like_count": {
+            "title": "Like count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "dislike_count": {
+            "title": "Dislike count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "favorite_count": {
+            "title": "Favorite count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "thumbnails": {
+            "title": "Thumbnails",
+            "type": "object",
+            "readOnly": true
+          }
+        }
+      },
+      "Genre": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "GenreSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          }
+        }
+      },
+      "Platform": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "readOnly": true,
+            "x-nullable": true,
+            "format": "uri"
+          },
+          "year_start": {
+            "title": "Year start",
+            "type": "integer",
+            "maximum": 32767,
+            "minimum": 0,
+            "x-nullable": true
+          },
+          "year_end": {
+            "title": "Year end",
+            "type": "integer",
+            "maximum": 32767,
+            "minimum": 0,
+            "x-nullable": true
+          }
+        }
+      },
+      "PlatformParentSingle": {
+        "required": [
+          "name",
+          "platforms"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Platform"
+            }
+          }
+        }
+      },
+      "PlatformSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "readOnly": true,
+            "format": "uri"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "readOnly": true,
+            "x-nullable": true,
+            "format": "uri"
+          },
+          "year_start": {
+            "title": "Year start",
+            "type": "integer",
+            "maximum": 32767,
+            "minimum": 0,
+            "x-nullable": true
+          },
+          "year_end": {
+            "title": "Year end",
+            "type": "integer",
+            "maximum": 32767,
+            "minimum": 0,
+            "x-nullable": true
+          }
+        }
+      },
+      "Publisher": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "PublisherSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          }
+        }
+      },
+      "Store": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "domain": {
+            "title": "Domain",
+            "type": "string",
+            "maxLength": 255,
+            "x-nullable": true
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "StoreSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "domain": {
+            "title": "Domain",
+            "type": "string",
+            "maxLength": 255,
+            "x-nullable": true
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          }
+        }
+      },
+      "Tag": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "language": {
+            "title": "Language",
+            "type": "string",
+            "readOnly": true,
+            "minLength": 1
+          }
+        }
+      },
+      "TagSingle": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "ID",
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string",
+            "format": "slug",
+            "pattern": "^[-a-zA-Z0-9_]+$",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "games_count": {
+            "title": "Games count",
+            "type": "integer",
+            "readOnly": true
+          },
+          "image_background": {
+            "title": "Image background",
+            "type": "string",
+            "format": "uri",
+            "readOnly": true,
+            "minLength": 1
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          }
         }
       }
     }

@@ -1,19 +1,11 @@
-export const filterPlatformName = ( platforms: {
-  platform: {
-    id: number;
-    slug: string;
-    name: string;
-  };
-  released_at: string;
-  requirements: {
-    minimum: string;
-    recommended: string;
-  };
-}[] ) => {
+import type { SchemaGamePlatforms } from "@shared/types/games.ts";
+
+export const filterPlatformName = ( platforms: SchemaGamePlatforms ) => {
   let rawArr: string[] = [];
 
   platforms.forEach( ( platform ) => {
-    rawArr.push( platform.platform.name );
+    if ( platform.platform && platform.platform.name ) rawArr.push(
+      platform.platform.name );
   } );
 
   const filterArr = rawArr.map( ( name ) => {

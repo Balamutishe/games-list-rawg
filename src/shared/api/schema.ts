@@ -4,1282 +4,2032 @@
  */
 
 export interface paths {
-    "/creator-roles": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of creator positions (jobs). */
-        get: operations["creator-roles_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+  "/creator-roles": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/creators": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of game creators. */
-        get: operations["creators_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of creator positions (jobs). */
+    get: operations["creator-roles_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/creators": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/creators/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Person. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the creator. */
-        get: operations["creators_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of game creators. */
+    get: operations["creators_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/creators/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Person. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/developers": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of game developers. */
-        get: operations["developers_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the creator. */
+    get: operations["creators_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/developers": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/developers/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Developer. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the developer. */
-        get: operations["developers_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of game developers. */
+    get: operations["developers_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/developers/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Developer. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of games. */
-        get: operations["games_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the developer. */
+    get: operations["developers_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/games/{game_pk}/additions": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of DLC's for the game, GOTY and other editions, companion apps, etc. */
-        get: operations["games_additions_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of games. */
+    get: operations["games_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{game_pk}/additions": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    "/games/{game_pk}/development-team": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of individual creators that were part of the development team. */
-        get: operations["games_development-team_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of DLC's for the game, GOTY and other editions, companion apps, etc. */
+    get: operations["games_additions_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{game_pk}/development-team": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    "/games/{game_pk}/game-series": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of games that are part of the same series. */
-        get: operations["games_game-series_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of individual creators that were part of the development team. */
+    get: operations["games_development-team_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{game_pk}/game-series": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    "/games/{game_pk}/parent-games": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of parent games for DLC's and editions. */
-        get: operations["games_parent-games_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of games that are part of the same series. */
+    get: operations["games_game-series_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{game_pk}/parent-games": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    "/games/{game_pk}/screenshots": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        /** Get screenshots for the game. */
-        get: operations["games_screenshots_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of parent games for DLC's and editions. */
+    get: operations["games_parent-games_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{game_pk}/screenshots": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    "/games/{game_pk}/stores": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        /** Get links to the stores that sell the game. */
-        get: operations["games_stores_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get screenshots for the game. */
+    get: operations["games_screenshots_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{game_pk}/stores": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the game. */
-        get: operations["games_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get links to the stores that sell the game. */
+    get: operations["games_stores_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}/achievements": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of game achievements. */
-        get: operations["games_achievements_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the game. */
+    get: operations["games_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}/achievements": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}/movies": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of game trailers. */
-        get: operations["games_movies_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of game achievements. */
+    get: operations["games_achievements_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}/movies": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}/reddit": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of most recent posts from the game's subreddit. */
-        get: operations["games_reddit_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of game trailers. */
+    get: operations["games_movies_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}/reddit": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}/suggested": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get a list of visually similar games, available only for business and enterprise API users. */
-        get: operations["games_suggested_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of most recent posts from the game's subreddit. */
+    get: operations["games_reddit_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}/suggested": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}/twitch": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get streams on Twitch associated with the game, available only for business and enterprise API users. */
-        get: operations["games_twitch_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of visually similar games, available only for business and enterprise API users. */
+    get: operations["games_suggested_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}/twitch": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/games/{id}/youtube": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get videos from YouTube associated with the game, available only for business and enterprise API users. */
-        get: operations["games_youtube_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get streams on Twitch associated with the game, available only for business and enterprise API users. */
+    get: operations["games_twitch_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/games/{id}/youtube": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/genres": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of video game genres. */
-        get: operations["genres_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get videos from YouTube associated with the game, available only for business and enterprise API users. */
+    get: operations["games_youtube_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/genres": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/genres/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Genre. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the genre. */
-        get: operations["genres_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of video game genres. */
+    get: operations["genres_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/genres/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Genre. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/platforms": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of video game platforms. */
-        get: operations["platforms_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the genre. */
+    get: operations["genres_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/platforms": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/platforms/lists/parents": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /**
-         * Get a list of parent platforms.
-         * @description For instance, for PS2 and PS4 the “parent platform” is PlayStation.
-         */
-        get: operations["platforms_lists_parents_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of video game platforms. */
+    get: operations["platforms_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/platforms/lists/parents": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/platforms/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Platform. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the platform. */
-        get: operations["platforms_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /**
+     * Get a list of parent platforms.
+     * @description For instance, for PS2 and PS4 the “parent platform” is
+     *   PlayStation.
+     */
+    get: operations["platforms_lists_parents_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/platforms/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Platform. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/publishers": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of video game publishers. */
-        get: operations["publishers_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the platform. */
+    get: operations["platforms_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/publishers": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/publishers/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Publisher. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the publisher. */
-        get: operations["publishers_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of video game publishers. */
+    get: operations["publishers_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/publishers/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Publisher. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/stores": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of video game storefronts. */
-        get: operations["stores_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the publisher. */
+    get: operations["publishers_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/stores": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/stores/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Store. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the store. */
-        get: operations["stores_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of video game storefronts. */
+    get: operations["stores_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/stores/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Store. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "/tags": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a list of tags. */
-        get: operations["tags_list"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get details of the store. */
+    get: operations["stores_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/tags": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/tags/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Tag. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        /** Get details of the tag. */
-        get: operations["tags_read"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** Get a list of tags. */
+    get: operations["tags_list"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/tags/{id}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Tag. */
+        id: string;
+      };
+      cookie?: never;
     };
+    /** Get details of the tag. */
+    get: operations["tags_read"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
 }
-export type webhooks = Record<string, never>;
+
 export interface components {
-    schemas: never;
-    responses: never;
-    parameters: never;
-    requestBodies: never;
-    headers: never;
-    pathItems: never;
+  schemas: {
+    Position: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      readonly name?: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+    };
+    Person: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Games count */
+      readonly games_count?: number;
+    };
+    PersonSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /** Reviews count */
+      readonly reviews_count?: number;
+      /**
+       * Rating
+       * Format: decimal
+       */
+      readonly rating?: string;
+      /** Rating top */
+      readonly rating_top?: number;
+      /**
+       * Updated
+       * Format: date-time
+       */
+      readonly updated?: string;
+    };
+    Developer: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+    };
+    DeveloperSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+    };
+    Game: {
+      /** ID */
+      readonly id?: number;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Name */
+      readonly name?: string;
+      /**
+       * Released
+       * Format: date
+       */
+      readonly released?: string;
+      /** TBA */
+      readonly tba?: boolean;
+      /**
+       * Background image
+       * Format: uri
+       */
+      readonly background_image?: string;
+      /** Rating */
+      rating: number;
+      /** Rating top */
+      readonly rating_top?: number;
+      /** Ratings */
+      readonly ratings?: Record<string, never>;
+      /** Ratings count */
+      readonly ratings_count?: number;
+      /** Reviews text count */
+      readonly reviews_text_count?: string;
+      /** Added */
+      readonly added?: number;
+      /** Added by status */
+      readonly added_by_status?: Record<string, never>;
+      /** Metacritic */
+      readonly metacritic?: number;
+      /**
+       * Playtime
+       * @description in hours
+       */
+      readonly playtime?: number;
+      /** Suggestions count */
+      readonly suggestions_count?: number;
+      /**
+       * Updated
+       * Format: date-time
+       */
+      readonly updated?: string;
+      esrb_rating?: {
+        id?: number;
+        /** @enum {string} */
+        slug?: "everyone" | "everyone-10-plus" | "teen" | "mature" | "adults-only" | "rating-pending";
+        /** @enum {string} */
+        name?: "Everyone" | "Everyone 10+" | "Teen" | "Mature" | "Adults Only" | "Rating Pending";
+      };
+      platforms: {
+        platform: {
+          id?: number;
+          slug?: string;
+          name?: string;
+        };
+        released_at?: string;
+        requirements?: {
+          minimum?: string;
+          recommended?: string;
+        };
+      }[];
+    };
+    GamePersonList: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Games count */
+      readonly games_count?: number;
+    };
+    /** @example {
+     *       "image": "@image.jpg",
+     *       "hidden": false
+     *     } */
+    ScreenShot: {
+      /** ID */
+      readonly id?: number;
+      /**
+       * Image
+       * Format: uri
+       * @description An image file with size up to 20 MB.
+       */
+      readonly image?: string;
+      /**
+       * Hidden
+       * @description Set image as hidden or visible.
+       * @default false
+       */
+      hidden: boolean;
+      /** Width */
+      readonly width?: number;
+      /** Height */
+      readonly height?: number;
+    };
+    GameStoreFull: {
+      /** ID */
+      readonly id?: number;
+      /** Game id */
+      readonly game_id?: string;
+      /** Store id */
+      readonly store_id?: string;
+      /**
+       * Url
+       * Format: uri
+       */
+      url: string;
+    };
+    GamePlatformMetacritic: {
+      /** Metascore */
+      readonly metascore?: number;
+      /** Url */
+      readonly url?: string;
+    };
+    GameSingle: {
+      /** ID */
+      readonly id?: number;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Name */
+      readonly name?: string;
+      /** Name original */
+      readonly name_original?: string;
+      /** Description */
+      readonly description?: string;
+      /** Metacritic */
+      readonly metacritic?: number;
+      readonly metacritic_platforms?: components["schemas"]["GamePlatformMetacritic"][];
+      /**
+       * Released
+       * Format: date
+       */
+      readonly released?: string;
+      /** TBA */
+      readonly tba?: boolean;
+      /**
+       * Updated
+       * Format: date-time
+       */
+      readonly updated?: string;
+      /**
+       * Background image
+       * Format: uri
+       */
+      readonly background_image?: string;
+      /** Background image additional */
+      readonly background_image_additional?: string;
+      /**
+       * Website
+       * Format: uri
+       */
+      readonly website?: string;
+      /** Rating */
+      rating: number;
+      /** Rating top */
+      readonly rating_top?: number;
+      /** Ratings */
+      readonly ratings?: Record<string, never>;
+      /** Reactions */
+      readonly reactions?: Record<string, never>;
+      /** Added */
+      readonly added?: number;
+      /** Added by status */
+      readonly added_by_status?: Record<string, never>;
+      /**
+       * Playtime
+       * @description in hours
+       */
+      readonly playtime?: number;
+      /** Screenshots count */
+      readonly screenshots_count?: number;
+      /** Movies count */
+      readonly movies_count?: number;
+      /** Creators count */
+      readonly creators_count?: number;
+      /** Achievements count */
+      readonly achievements_count?: number;
+      /** Parent achievements count */
+      readonly parent_achievements_count?: string;
+      /**
+       * Reddit url
+       * @description For example "https://www.reddit.com/r/uncharted/" or
+       *   "uncharted"
+       */
+      readonly reddit_url?: string;
+      /** Reddit name */
+      readonly reddit_name?: string;
+      /** Reddit description */
+      readonly reddit_description?: string;
+      /**
+       * Reddit logo
+       * Format: uri
+       */
+      readonly reddit_logo?: string;
+      /** Reddit count */
+      readonly reddit_count?: number;
+      /** Twitch count */
+      readonly twitch_count?: string;
+      /** Youtube count */
+      readonly youtube_count?: string;
+      /** Reviews text count */
+      readonly reviews_text_count?: string;
+      /** Ratings count */
+      readonly ratings_count?: number;
+      /** Suggestions count */
+      readonly suggestions_count?: number;
+      readonly alternative_names?: string[];
+      /**
+       * Metacritic url
+       * @description For example
+       *   "http://www.metacritic.com/game/playstation-4/the-witcher-3-wild-hunt"
+       */
+      readonly metacritic_url?: string;
+      /** Parents count */
+      readonly parents_count?: number;
+      /** Additions count */
+      readonly additions_count?: number;
+      /** Game series count */
+      readonly game_series_count?: number;
+      esrb_rating?: {
+        id?: number;
+        /** @enum {string} */
+        slug?: "everyone" | "everyone-10-plus" | "teen" | "mature" | "adults-only" | "rating-pending";
+        /** @enum {string} */
+        name?: "Everyone" | "Everyone 10+" | "Teen" | "Mature" | "Adults Only" | "Rating Pending";
+      };
+      platforms?: {
+        platform?: {
+          id?: number;
+          slug?: string;
+          name?: string;
+        };
+        released_at?: string;
+        requirements?: {
+          minimum?: string;
+          recommended?: string;
+        };
+      }[];
+    };
+    ParentAchievement: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      readonly name?: string;
+      /** Description */
+      readonly description?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /**
+       * Percent
+       * Format: decimal
+       */
+      readonly percent?: string;
+    };
+    Movie: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      readonly name?: string;
+      /**
+       * Preview
+       * Format: uri
+       */
+      readonly preview?: string;
+      /** Data */
+      readonly data?: Record<string, never>;
+    };
+    Reddit: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      readonly name?: string;
+      /** Text */
+      readonly text?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /**
+       * Url
+       * Format: uri
+       */
+      readonly url?: string;
+      /** Username */
+      readonly username?: string;
+      /**
+       * Username url
+       * Format: uri
+       */
+      readonly username_url?: string;
+      /**
+       * Created
+       * Format: date-time
+       */
+      readonly created?: string;
+    };
+    Twitch: {
+      /** ID */
+      readonly id?: number;
+      /** External id */
+      readonly external_id?: number;
+      /** Name */
+      readonly name?: string;
+      /** Description */
+      readonly description?: string;
+      /**
+       * Created
+       * Format: date-time
+       */
+      readonly created?: string;
+      /**
+       * Published
+       * Format: date-time
+       */
+      readonly published?: string;
+      /**
+       * Thumbnail
+       * Format: uri
+       */
+      readonly thumbnail?: string;
+      /** View count */
+      readonly view_count?: number;
+      /** Language */
+      readonly language?: string;
+    };
+    Youtube: {
+      /** ID */
+      readonly id?: number;
+      /** External id */
+      readonly external_id?: string;
+      /** Channel id */
+      readonly channel_id?: string;
+      /** Channel title */
+      readonly channel_title?: string;
+      /** Name */
+      readonly name?: string;
+      /** Description */
+      readonly description?: string;
+      /**
+       * Created
+       * Format: date-time
+       */
+      readonly created?: string;
+      /** View count */
+      readonly view_count?: number;
+      /** Comments count */
+      readonly comments_count?: number;
+      /** Like count */
+      readonly like_count?: number;
+      /** Dislike count */
+      readonly dislike_count?: number;
+      /** Favorite count */
+      readonly favorite_count?: number;
+      /** Thumbnails */
+      readonly thumbnails?: Record<string, never>;
+    };
+    Genre: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+    };
+    GenreSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+    };
+    Platform: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /** Year start */
+      year_start?: number;
+      /** Year end */
+      year_end?: number;
+    };
+    PlatformParentSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      platforms: components["schemas"]["Platform"][];
+    };
+    PlatformSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+      /**
+       * Image
+       * Format: uri
+       */
+      readonly image?: string;
+      /** Year start */
+      year_start?: number;
+      /** Year end */
+      year_end?: number;
+    };
+    Publisher: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+    };
+    PublisherSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+    };
+    Store: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /** Domain */
+      domain?: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+    };
+    StoreSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /** Domain */
+      domain?: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+    };
+    Tag: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Language */
+      readonly language?: string;
+    };
+    TagSingle: {
+      /** ID */
+      readonly id?: number;
+      /** Name */
+      name: string;
+      /**
+       * Slug
+       * Format: slug
+       */
+      readonly slug?: string;
+      /** Games count */
+      readonly games_count?: number;
+      /**
+       * Image background
+       * Format: uri
+       */
+      readonly image_background?: string;
+      /** Description */
+      description?: string;
+    };
+  };
+  responses: never;
+  parameters: never;
+  requestBodies: never;
+  headers: never;
+  pathItems: never;
 }
+
+export type SchemaDeveloper = components['schemas']['Developer'];
+export type SchemaDeveloperSingle = components['schemas']['DeveloperSingle'];
+export type SchemaGame = components['schemas']['Game'];
+export type SchemaGamePersonList = components['schemas']['GamePersonList'];
+export type SchemaScreenShot = components['schemas']['ScreenShot'];
+export type SchemaGameStoreFull = components['schemas']['GameStoreFull'];
+export type SchemaGamePlatformMetacritic = components['schemas']['GamePlatformMetacritic'];
+export type SchemaGameSingle = components['schemas']['GameSingle'];
+export type SchemaParentAchievement = components['schemas']['ParentAchievement'];
+export type SchemaMovie = components['schemas']['Movie'];
+export type SchemaReddit = components['schemas']['Reddit'];
+export type SchemaTwitch = components['schemas']['Twitch'];
+export type SchemaYoutube = components['schemas']['Youtube'];
+export type SchemaGenre = components['schemas']['Genre'];
+export type SchemaGenreSingle = components['schemas']['GenreSingle'];
+export type SchemaPlatform = components['schemas']['Platform'];
+export type SchemaPlatformParentSingle = components['schemas']['PlatformParentSingle'];
+export type SchemaPlatformSingle = components['schemas']['PlatformSingle'];
+export type SchemaPublisher = components['schemas']['Publisher'];
+export type SchemaPublisherSingle = components['schemas']['PublisherSingle'];
+export type SchemaStore = components['schemas']['Store'];
+export type SchemaStoreSingle = components['schemas']['StoreSingle'];
+export type SchemaTag = components['schemas']['Tag'];
+export type SchemaTagSingle = components['schemas']['TagSingle'];
 export type $defs = Record<string, never>;
+
 export interface operations {
-    "creator-roles_list": {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  "creator-roles_list": {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    creators_list: {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    creators_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  creators_list: {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    developers_list: {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    developers_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Developer. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  creators_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: string;
+      };
+      cookie?: never;
     };
-    games_list: {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-                /** @description Search query. */
-                search?: string;
-                /** @description Disable fuzziness for the search query. */
-                search_precise?: string;
-                /** @description Mark the search query as exact. */
-                search_exact?: string;
-                /** @description Filter by parent platforms, for example: `1,2,3`. */
-                parent_platforms?: string;
-                /** @description Filter by platforms, for example: `4,5`. */
-                platforms?: string;
-                /** @description Filter by stores, for example: `5,6`. */
-                stores?: string;
-                /** @description Filter by developers, for example: `1612,18893` or `valve-software,feral-interactive`. */
-                developers?: string;
-                /** @description Filter by publishers, for example: `354,20987` or `electronic-arts,microsoft-studios`. */
-                publishers?: string;
-                /** @description Filter by genres, for example: `4,51` or `action,indie`. */
-                genres?: string;
-                /** @description Filter by tags, for example: `31,7` or `singleplayer,multiplayer`. */
-                tags?: string;
-                /** @description Filter by creators, for example: `78,28` or `cris-velasco,mike-morasky`. */
-                creators?: string;
-                /** @description Filter by a release date, for example: `2010-01-01,2018-12-31.1960-01-01,1969-12-31`. */
-                dates?: string;
-                /** @description Filter by an update date, for example: `2020-12-01,2020-12-31`. */
-                updated?: string;
-                /** @description Filter by platforms count, for example: `1`. */
-                platforms_count?: string;
-                /** @description Filter by a metacritic rating, for example: `80,100`. */
-                metacritic?: string;
-                /** @description Exclude games from a particular collection, for example: `123`. */
-                exclude_collection?: string;
-                /** @description Exclude additions. */
-                exclude_additions?: string;
-                /** @description Exclude games which have additions. */
-                exclude_parents?: string;
-                /** @description Exclude games which included in a game series. */
-                exclude_game_series?: string;
-                /** @description Exclude stores, for example: `5,6`. */
-                exclude_stores?: string;
-                /** @description Available fields: `name`, `released`, `added`, `created`, `updated`, `rating`, `metacritic`. You can reverse the sort order adding a hyphen, for example: `-released`. */
-                ordering?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    games_additions_list: {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  developers_list: {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "games_development-team_list": {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    "games_game-series_list": {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  developers_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Developer. */
+        id: string;
+      };
+      cookie?: never;
     };
-    "games_parent-games_list": {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    games_screenshots_list: {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_list: {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+        /** @description Search query. */
+        search?: string;
+        /** @description Disable fuzziness for the search query. */
+        search_precise?: string;
+        /** @description Mark the search query as exact. */
+        search_exact?: string;
+        /** @description Filter by parent platforms, for example: `1,2,3`. */
+        parent_platforms?: string;
+        /** @description Filter by platforms, for example: `4,5`. */
+        platforms?: string;
+        /** @description Filter by stores, for example: `5,6`. */
+        stores?: string;
+        /** @description Filter by developers, for example: `1612,18893` or `valve-software,feral-interactive`. */
+        developers?: string;
+        /** @description Filter by publishers, for example: `354,20987` or `electronic-arts,microsoft-studios`. */
+        publishers?: string;
+        /** @description Filter by genres, for example: `4,51` or `action,indie`. */
+        genres?: string;
+        /** @description Filter by tags, for example: `31,7` or `singleplayer,multiplayer`. */
+        tags?: string;
+        /** @description Filter by creators, for example: `78,28` or `cris-velasco,mike-morasky`. */
+        creators?: string;
+        /** @description Filter by a release date, for example: `2010-01-01,2018-12-31.1960-01-01,1969-12-31`. */
+        dates?: string;
+        /** @description Filter by an update date, for example: `2020-12-01,2020-12-31`. */
+        updated?: string;
+        /** @description Filter by platforms count, for example: `1`. */
+        platforms_count?: string;
+        /** @description Filter by a metacritic rating, for example: `80,100`. */
+        metacritic?: string;
+        /** @description Exclude games from a particular collection, for example: `123`. */
+        exclude_collection?: string;
+        /** @description Exclude additions. */
+        exclude_additions?: string;
+        /** @description Exclude games which have additions. */
+        exclude_parents?: string;
+        /** @description Exclude games which included in a game series. */
+        exclude_game_series?: string;
+        /** @description Exclude stores, for example: `5,6`. */
+        exclude_stores?: string;
+        /** @description Available fields: `name`, `released`, `added`, `created`, `updated`, `rating`, `metacritic`. You can reverse the sort order adding a hyphen, for example: `-released`. */
+        ordering?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    games_stores_list: {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path: {
-                game_pk: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    games_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_additions_list: {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    games_achievements_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    games_movies_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  "games_development-team_list": {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    games_reddit_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    games_suggested_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  "games_game-series_list": {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    games_twitch_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    games_youtube_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description An ID or a slug identifying this Game. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  "games_parent-games_list": {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    genres_list: {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    genres_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Genre. */
-                id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_screenshots_list: {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    platforms_list: {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    platforms_lists_parents_list: {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_stores_list: {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path: {
+        game_pk: string;
+      };
+      cookie?: never;
     };
-    platforms_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Platform. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    publishers_list: {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    publishers_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Publisher. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    stores_list: {
-        parameters: {
-            query?: {
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_achievements_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    stores_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Store. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
-    tags_list: {
-        parameters: {
-            query?: {
-                /** @description A page number within the paginated result set. */
-                page?: string;
-                /** @description Number of results to return per page. */
-                page_size?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+  };
+  games_movies_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
     };
-    tags_read: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                /** @description A unique integer value identifying this Tag. */
-                id: string;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-        };
+        content?: never;
+      };
     };
+  };
+  games_reddit_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  games_suggested_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  games_twitch_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  games_youtube_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description An ID or a slug identifying this Game. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  genres_list: {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  genres_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Genre. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  platforms_list: {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  platforms_lists_parents_list: {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  platforms_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Platform. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  publishers_list: {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  publishers_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Publisher. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  stores_list: {
+    parameters: {
+      query?: {
+        /** @description Which field to use when ordering the results. */
+        ordering?: string;
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  stores_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Store. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  tags_list: {
+    parameters: {
+      query?: {
+        /** @description A page number within the paginated result set. */
+        page?: string;
+        /** @description Number of results to return per page. */
+        page_size?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
+  tags_read: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        /** @description A unique integer value identifying this Tag. */
+        id: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      200: {
+        headers: {
+          [ name: string ]: unknown;
+        };
+        content?: never;
+      };
+    };
+  };
 }
