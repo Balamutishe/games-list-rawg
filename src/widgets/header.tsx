@@ -4,16 +4,18 @@ import { LayoutContent } from "@widgets/layout.tsx";
 export const Header = () => {
   return <header className="border-b-2">
     <LayoutContent>
-      <Link
-        to="/"
-      >
-        Home
-      </Link>{ ' ' }
-      <Link
-        to="/about"
-      >
-        About
-      </Link>
+      <nav className="flex gap-4">
+        <Link
+          to="/"
+        >
+          Home
+        </Link>{ ' ' }
+        <Link
+          to="/games"
+        >
+          Games
+        </Link>
+      </nav>
     </LayoutContent>
   </header>
 }

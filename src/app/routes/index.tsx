@@ -1,6 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router'
-import MainPage from "@pages/mainPage.tsx";
 
 export const Route = createFileRoute( '/' )( {
   component: MainPage,
 } )
+
+function MainPage() {
+  return <section>
+    <h1>MainPage</h1>
+  </section>
+}

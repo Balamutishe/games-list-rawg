@@ -2,17 +2,13 @@ import { useGamesGet } from "@shared/api/games/useGamesGet.ts";
 import type { SchemaGame } from "@shared/api/schema.ts";
 import List from "@widgets/list.tsx";
 import { filterPlatformName } from "@shared/utils/filterPlatformName.ts";
-import { useState } from "react";
+import { type FC, useState } from "react";
+import { Pagination } from "@widgets/pagination.tsx";
+import { Link } from "@tanstack/react-router";
 
-export const GamesList = () => {
+export const GamesView = () => {
   const [ page, setPage ] = useState( "1" )
   const { data, isError, isLoading, error } = useGamesGet( page )
-
-  const handleSetPage = ( url: string ) => {
-    const params = new URLSearchParams( url );
-    const page = params.get( "page" ) || "1"
-    setPage( page )
-  }
 
   if ( isLoading ) {
     return <div>Loading...</div>
@@ -23,26 +19,34 @@ export const GamesList = () => {
   }
 
   return <div className="w-full">
-    <div className="flex justify-end mb-6">
-      { data?.previous && <button
-        onClick={ () => handleSetPage( data.previous ) }
-        className="px-4 py-2 bg-gray-600 mr-4 rounded-xl"
-      >Prev</button> }
-      { data?.next && <button
-        onClick={ () => handleSetPage( data.next ) }
-        className="px-4 py-2 bg-gray-600 rounded-xl"
-      >Next</button> }
-    </div>
-    <List>
-      { data && data.results.length && data.results.map( ( game ) => (
+    <Pagination
+      setPage={ setPage }
+      nextUrl={ data?.next }
+      previousUrl={ data?.previous }
+    />
+    <GamesList gamesList={ data?.results } />
+  </div>
+}
+
+const GamesList: FC<{
+  gamesList: SchemaGame[] | undefined
+}> = ( { gamesList } ) => {
+  return <List>
+    { gamesList && gamesList.length &&
+      gamesList.map( ( game: SchemaGame ) => (
         <li
           key={ game.id }
         >
-          <GameCard game={ game } />
+          <Link
+            to={ `/games/$gameId` }
+            params={ { gameId: game.id.toString() } }
+          >
+            <GameCard game={ game } />
+          </Link>
         </li>
       ) ) }
-    </List>
-  </div>
+    { ( !gamesList || gamesList.length === 0 ) && <li>Список пуст</li> }
+  </List>
 }
 
 const GameCard = ( { game }: { game: SchemaGame } ) => {

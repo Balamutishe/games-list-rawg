@@ -689,7 +689,7 @@ export interface components {
     };
     Game: {
       /** ID */
-      readonly id?: number;
+      readonly id: number;
       /**
        * Slug
        * Format: slug
