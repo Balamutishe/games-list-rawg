@@ -104,14 +104,14 @@ const GamesList: FC<{
 }
 
 const GameCard = ( { game }: { game: SchemaGame } ) => {
-  return <div className="rounded-xl bg-gray-700 flex flex-col h-50">
+  return <div className="rounded-xl bg-gray-700 flex flex-col h-53">
     <img
       src={ game.background_image }
       alt={ game.name }
       className="rounded-t-xl w-full h-[60%]"
     />
-    <div className="flex flex-col justify-between h-[40%] bg-gray-800 px-2 py-3 rounded-b-xl">
-      <p className="flex items-center text-xs">
+    <div className="h-[40%] bg-gray-800 px-2 py-2 rounded-b-xl">
+      <p className="flex flex-wrap items-center text-[0.45rem] leading-3 mb-1">
         { game.platforms &&
           filterPlatformName( game.platforms ).map( ( platform ) => (
             <span
