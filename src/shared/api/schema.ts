@@ -1089,6 +1089,12 @@ export interface components {
        * Format: uri
        */
       readonly image_background?: string;
+      readonly games?: {
+        id: number,
+        slug?: string,
+        name?: string,
+        added?: number
+      }[]
     };
     GenreSingle: {
       /** ID */

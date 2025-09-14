@@ -31,7 +31,7 @@ export const GamesView = () => {
 const GamesList: FC<{
   gamesList: SchemaGame[] | undefined
 }> = ( { gamesList } ) => {
-  return <List>
+  return <List variant={ "grid" }>
     { gamesList && gamesList.length &&
       gamesList.map( ( game: SchemaGame ) => (
         <li
