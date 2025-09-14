@@ -27,7 +27,7 @@ const GenresList: FC<{
     { genresList && genresList.length !== 0 && genresList.map( ( genre ) => (
       <li key={ genre.id }><Link
         to={ "/games" }
-        search={ { genres: genre.slug } }
+        search={ ( old ) => ( { ...old, genres: genre.slug, page: 1 } ) }
       >{ genre.name }</Link></li>
     ) ) }
   </List>

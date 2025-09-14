@@ -2,16 +2,16 @@ import { useGamesGet } from "@shared/api/games/useGamesGet.ts";
 import type { SchemaGame } from "@shared/api/schema.ts";
 import List from "@widgets/list.tsx";
 import { filterPlatformName } from "@shared/utils/filterPlatformName.ts";
-import { type FC, useState } from "react";
+import { type FC } from "react";
 import { Pagination } from "@widgets/pagination.tsx";
 import { Link } from "@tanstack/react-router";
 import { Route } from "@app/routes/games/index.tsx";
 
 export const GamesView = () => {
   // @ts-ignore
-  const { genres } = Route.useSearch()
-  const [ page, setPage ] = useState( "1" )
-  const { data, isError, isLoading, error } = useGamesGet( page, genres )
+  const { genres, page } = Route.useSearch()
+  const { data, isError, isLoading, error } = useGamesGet(
+    { page, genres } )
 
   if ( isLoading ) {
     return <div>Loading...</div>
@@ -23,7 +23,7 @@ export const GamesView = () => {
 
   return <div className="w-full">
     <Pagination
-      setPage={ setPage }
+      path={ "/games" }
       nextUrl={ data?.next }
       previousUrl={ data?.previous }
     />
@@ -62,7 +62,10 @@ const GameCard = ( { game }: { game: SchemaGame } ) => {
     <div className="flex flex-col justify-between h-[40%] bg-gray-800 px-2 py-3 rounded-b-xl">
       <p className="flex items-center text-xs">
         { filterPlatformName( game.platforms ).map( ( platform ) => (
-          <span className="mr-2">{ platform }</span> )
+          <span
+            key={ crypto.randomUUID() }
+            className="mr-2"
+          >{ platform }</span> )
         ) }
       </p>
       <p className="flex items-center">
