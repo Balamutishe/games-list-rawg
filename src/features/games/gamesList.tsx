@@ -5,10 +5,13 @@ import { filterPlatformName } from "@shared/utils/filterPlatformName.ts";
 import { type FC, useState } from "react";
 import { Pagination } from "@widgets/pagination.tsx";
 import { Link } from "@tanstack/react-router";
+import { Route } from "@app/routes/games/index.tsx";
 
 export const GamesView = () => {
+  // @ts-ignore
+  const { genres } = Route.useSearch()
   const [ page, setPage ] = useState( "1" )
-  const { data, isError, isLoading, error } = useGamesGet( page )
+  const { data, isError, isLoading, error } = useGamesGet( page, genres )
 
   if ( isLoading ) {
     return <div>Loading...</div>

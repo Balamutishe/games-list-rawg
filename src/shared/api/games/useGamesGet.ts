@@ -3,16 +3,17 @@ import { client } from "@shared/api/client.ts";
 import { apiKey } from "@shared/api/apiConfig.ts";
 import type { ResponseGamesList } from "@shared/types/games.ts";
 
-export const useGamesGet = ( page?: string ) => {
+export const useGamesGet = ( page?: string, genres?: string ) => {
   return useQuery( {
-    queryKey: [ "games", page ],
+    queryKey: [ "games", page, genres ],
     queryFn: async ( { signal } ): Promise<ResponseGamesList> => {
       const response = await client.GET( `/games`,
         {
           params: {
             query: {
-              page: page || "2",
+              page: page || "1",
               page_size: "30",
+              genres: genres || "",
               // @ts-ignore
               key: `${ apiKey }`
             }

@@ -1074,7 +1074,7 @@ export interface components {
     };
     Genre: {
       /** ID */
-      readonly id?: number;
+      readonly id: number;
       /** Name */
       name: string;
       /**
