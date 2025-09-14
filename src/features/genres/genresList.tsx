@@ -15,7 +15,7 @@ export const GenresView = () => {
     return <div>Error: { error.message }</div>
   }
 
-  return <div>
+  return <div className="bg-gray-600 p-4 rounded-xl">
     <GenresList genresList={ data?.results } />
   </div>
 }

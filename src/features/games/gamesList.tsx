@@ -2,30 +2,30 @@ import { useGamesGet } from "@shared/api/games/useGamesGet.ts";
 import type { SchemaGame } from "@shared/api/schema.ts";
 import List from "@widgets/list.tsx";
 import { filterPlatformName } from "@shared/utils/filterPlatformName.ts";
-import { type FC } from "react";
+import { type FC, type RefObject, useEffect, useRef } from "react";
 import { Pagination } from "@widgets/pagination.tsx";
-import { Link } from "@tanstack/react-router";
-import { Route } from "@app/routes/games/index.tsx";
+import {
+  Link, type ParsedLocation, useLocation, useNavigate
+} from "@tanstack/react-router";
+import { useDebouncedCallback } from 'use-debounce'
 
 export const GamesView = () => {
-  // @ts-ignore
-  const { genres, page } = Route.useSearch()
-  const { data, isError, isLoading, error } = useGamesGet(
-    { page, genres } )
+  const location: ParsedLocation<{
+    search?: string,
+    page?: string,
+    genres?: string
+  }> = useLocation()
+  const { genres, page, search } = location.search
 
-  if ( isLoading ) {
-    return <div>Loading...</div>
-  }
-
-  if ( isError ) {
-    return <div>Error: { error.message }</div>
-  }
+  const { data, isError, isPending, isSuccess, error } = useGamesGet(
+    { page, genres, search } )
 
   return <div className="w-full">
     <div className="flex justify-between items-center mb-4">
       <h1 className="text-2xl">{ genres ?
         `${ genres.charAt( 0 ).toUpperCase() + genres.slice( 1 ) }` :
         'Games all' }</h1>
+      <GamesSearch />
       <Pagination
         path={ "/games" }
         nextUrl={ data?.next }
@@ -33,7 +33,52 @@ export const GamesView = () => {
       />
     </div>
 
-    <GamesList gamesList={ data?.results } />
+    { isPending && <div>Loading...</div> }
+    { isError && <div>Error: { error.message }</div> }
+    { isSuccess && <GamesList gamesList={ data.results } /> }
+  </div>
+}
+
+const GamesSearch = () => {
+  const location: ParsedLocation<{ search?: string }> = useLocation()
+  const navigate = useNavigate()
+  const ref: RefObject<HTMLInputElement | null> = useRef( null )
+
+  const handleChangeSearchName = useDebouncedCallback(
+    async ( event: React.ChangeEvent<HTMLInputElement> ) => {
+      const query = event.target.value.trim()
+      let nextSearch = { ...location.search }
+
+      if ( query.length > 0 && query !== '' ) {
+        nextSearch = { ...location.search, search: query }
+      } else {
+        delete nextSearch.search
+      }
+
+      await navigate( {
+        replace: true,
+        to: '/games',
+        search: nextSearch
+      } )
+    }, 400 )
+
+  useEffect( () => {
+    if ( ref.current ) {
+      ref.current.focus()
+    }
+  } )
+
+  return <div>
+    <input
+      ref={ ref }
+      type="text"
+      defaultValue={ location.search.search || '' }
+      onChange={ ( event ) => handleChangeSearchName( event ) }
+      placeholder={ "Search game..." }
+      className={ "outline-3 outline-gray-600 hover:outline-gray-400" +
+        " rounded-xl px-4" +
+        " py-2 cursor-pointer" }
+    />
   </div>
 }
 
@@ -41,7 +86,7 @@ const GamesList: FC<{
   gamesList: SchemaGame[] | undefined
 }> = ( { gamesList } ) => {
   return <List variant={ "grid" }>
-    { gamesList && gamesList.length &&
+    { gamesList && gamesList.length > 0 &&
       gamesList.map( ( game: SchemaGame ) => (
         <li
           key={ game.id }
@@ -54,7 +99,7 @@ const GamesList: FC<{
           </Link>
         </li>
       ) ) }
-    { ( !gamesList || gamesList.length === 0 ) && <li>Список пуст</li> }
+    { gamesList?.length === 0 && <li>Game not founded</li> }
   </List>
 }
 
@@ -67,12 +112,13 @@ const GameCard = ( { game }: { game: SchemaGame } ) => {
     />
     <div className="flex flex-col justify-between h-[40%] bg-gray-800 px-2 py-3 rounded-b-xl">
       <p className="flex items-center text-xs">
-        { filterPlatformName( game.platforms ).map( ( platform ) => (
-          <span
-            key={ crypto.randomUUID() }
-            className="mr-2"
-          >{ platform }</span> )
-        ) }
+        { game.platforms &&
+          filterPlatformName( game.platforms ).map( ( platform ) => (
+            <span
+              key={ crypto.randomUUID() }
+              className="mr-2"
+            >{ platform }</span> )
+          ) }
       </p>
       <p className="flex items-center">
         { game.name }
