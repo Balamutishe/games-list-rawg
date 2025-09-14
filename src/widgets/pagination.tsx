@@ -22,7 +22,7 @@ export const Pagination: FC<PaginationProps> = ( {
     await queryClient.invalidateQueries( { queryKey: [ "games" ] } )
   }
 
-  return <div className="flex justify-end mb-6">
+  return <div className="flex">
     <Link
       to={ path }
       search={ ( old ) => ( { ...old, page: handleSetPage( previousUrl! ) } ) }

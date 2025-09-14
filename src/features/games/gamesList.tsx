@@ -22,11 +22,17 @@ export const GamesView = () => {
   }
 
   return <div className="w-full">
-    <Pagination
-      path={ "/games" }
-      nextUrl={ data?.next }
-      previousUrl={ data?.previous }
-    />
+    <div className="flex justify-between items-center mb-4">
+      <h1 className="text-2xl">{ genres ?
+        `${ genres.charAt( 0 ).toUpperCase() + genres.slice( 1 ) }` :
+        'Games all' }</h1>
+      <Pagination
+        path={ "/games" }
+        nextUrl={ data?.next }
+        previousUrl={ data?.previous }
+      />
+    </div>
+
     <GamesList gamesList={ data?.results } />
   </div>
 }
