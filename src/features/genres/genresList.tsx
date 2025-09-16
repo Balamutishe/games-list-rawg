@@ -15,9 +15,7 @@ export const GenresView = () => {
     return <div>Error: { error.message }</div>
   }
 
-  return <div className="bg-gray-600 p-4 rounded-xl">
-    <GenresList genresList={ data?.results } />
-  </div>
+  return <GenresList genresList={ data?.results } />
 }
 
 const GenresList: FC<{
@@ -25,7 +23,10 @@ const GenresList: FC<{
 }> = ( { genresList } ) => {
   return <List variant={ "list" }>
     { genresList && genresList.length !== 0 && genresList.map( ( genre ) => (
-      <li key={ genre.id }><Link
+      <li
+        key={ genre.id }
+        className="text-xs"
+      ><Link
         to={ "/games" }
         search={ ( old ) => ( { ...old, genres: genre.slug, page: 1 } ) }
       >{ genre.name }</Link></li>

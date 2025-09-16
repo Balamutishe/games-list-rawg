@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@reduxjs/toolkit": "^2.9.0",
     "@tanstack/react-query": "^5.87.1",
     "@tanstack/react-router": "^1.131.35",
     "axios": "^1.11.0",
@@ -19,6 +20,7 @@
     "openapi-fetch": "^0.14.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-redux": "^9.2.0",
     "use-debounce": "^10.0.6",
     "zod": "^4.1.5"
   },

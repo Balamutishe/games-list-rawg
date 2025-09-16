@@ -8,7 +8,11 @@ export const Route = createFileRoute( '/games/' )( {
 
 function GamesPage() {
   return <section className="flex gap-4">
-    <GenresView />
-    <GamesView />
+    <div className="w-1/6 bg-gray-600 p-4 rounded-xl">
+      <GenresView />
+    </div>
+    <div className="w-5/6">
+      <GamesView />
+    </div>
   </section>
 }
