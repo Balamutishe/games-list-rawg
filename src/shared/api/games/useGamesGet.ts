@@ -13,7 +13,7 @@ export const useGamesGet = ( queryParams: {
       const response = await client.GET( `/games`,
         {
           params: {
-            query: { ...queryParams, key: `${ apiKey }`, page_size: "20" }
+            query: { ...queryParams, key: `${ apiKey }`, page_size: "10" }
           },
           signal
         } )

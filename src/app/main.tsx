@@ -5,6 +5,8 @@ import { createRouter, RouterProvider } from "@tanstack/react-router"
 import queryClient from "../shared/api/queryClient.ts"
 import { routeTree } from "@app/routes/routeTree.gen.ts"
 import '../shared/styles/index.css'
+import { Provider } from "react-redux";
+import { store } from '@app/store/store.ts'
 
 const router = createRouter( { routeTree } )
 
@@ -17,7 +19,9 @@ declare module '@tanstack/react-router' {
 createRoot( document.getElementById( 'root' )! ).render(
   <StrictMode>
     <QueryClientProvider client={ queryClient }>
-      <RouterProvider router={ router } />
+      <Provider store={ store }>
+        <RouterProvider router={ router } />
+      </Provider>
     </QueryClientProvider>
   </StrictMode>,
 )

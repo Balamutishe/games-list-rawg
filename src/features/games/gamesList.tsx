@@ -8,6 +8,9 @@ import {
   type ParsedLocation, useLocation, useNavigate
 } from "@tanstack/react-router";
 import { useDebouncedCallback } from 'use-debounce'
+import { useAppDispatch, useAppSelector } from "@app/store/hooks.ts";
+import { setCurrentGame } from "@features/games/currentGameSlice.ts";
+import { useGameDetailsGet } from "@shared/api/games/useGameDetailsGet.ts";
 
 export const GamesView = () => {
   const location: ParsedLocation<{
@@ -110,8 +113,11 @@ const GamesList: FC<{
 }
 
 const GameCard = ( { game }: { game: SchemaGame } ) => {
+  const dispatch = useAppDispatch()
+
   return <div
     className="relative flex gap-2"
+    onClick={ () => dispatch( setCurrentGame( game.id ) ) }
   >
     <div
       className="rounded-xl bg-gray-700 flex"
@@ -149,15 +155,36 @@ const GameCard = ( { game }: { game: SchemaGame } ) => {
   </div>
 }
 
-const GameDetails = ( { game }: { game?: SchemaGame } ) => {
-  return <div className="bg-gray-600 h-full p-4 rounded-xl">
-    {//@ts-ignore
-      game && game.short_screenshots.map( ( screenshot, index ) => {
-        if ( index < 3 ) return <img
-          src={ screenshot.image }
-          alt={ screenshot.image }
+const GameDetails = () => {
+  const currentGameId = useAppSelector( ( state ) => state.currentGame.gameId )
+  const { data, isSuccess, isPending, isError, error } = useGameDetailsGet(
+    currentGameId )
+
+
+  return <div className="bg-gray-600 h-full rounded-xl">
+    { isPending && <div>Loading...</div> }
+    { isError && <div>Error: { error.message }</div> }
+    { isSuccess &&
+      <div>
+        <img
+          src={ data.background_image }
+          alt={ 'Background image game' }
+          className='mb-2 rounded-t-xl'
         />
-      } ) }
-    { !game && <div>Game not founded</div> }
+        <div className='px-2'>
+          <p className='mb-2'>{ data.name }</p>
+          <p
+            className='text-xs'
+            style={ {
+              display: "-webkit-box",
+              lineClamp: "initial",
+              WebkitLineClamp: "5",
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            } }
+          >{ data.description }</p>
+        </div>
+      </div>
+    }
   </div>
 }
